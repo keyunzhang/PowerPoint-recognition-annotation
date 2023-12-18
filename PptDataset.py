@@ -2,7 +2,7 @@ from mmseg.registry import DATASETS
 from .basesegdataset import BaseSegDataset
 
 @DATASETS.register_module()
-class pptDataset(BaseSegDataset):
+class PptDataset(BaseSegDataset):
     # 类别和对应的 RGB配色
     METAINFO = {
         'classes':['Title', 'Subtitle', 'Text', 'Equation', 'Figure'],
